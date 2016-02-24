@@ -238,7 +238,61 @@ a:focus, a:hover, a:active {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width:767px) {
+@media screen and (min-width: 321px) and (max-width:767px) {
+    .container {
+        max-width: 320px;
+    }
+    
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .modal-sm {    
+        width: 355px;
+    }
+    
+    .prev{
+        margin-left: -13%;
+        margin-top: -140%;
+    }
+    
+    .next {
+        position: absolute;
+        margin-left: 108%;
+        margin-top: -147%;
+    }
+    
+    .card > .image{
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .card > .image{
+        //width: 240px;
+        //height: auto;
+        margin-bottom: 15px;
+    }
+    
+    .close {
+        margin-top: -1px;
+        margin-right: -2px;
+        margin-bottom: 5px;
+        opacity: 1 !important;
+    }
+}
+
+@media screen and (max-width:320px) {
     .container {
         max-width: 320px;
     }
