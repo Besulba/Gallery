@@ -18,15 +18,15 @@ Steps for use the gallery plugin
 2. add path js <script src="source/gallery.js"></script>
 3. add in your thml file the next lines code:
 
-<!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box">
-     <div class="container">
-        <div id="gallery" class="row">
-        </div>
-        <div id="overlay">
-        </div>
-    </div>
- </div>
- <!-- end www.htmlcommentbox.com -->
+<!-- begin -->
+<pre><code>
+&lt;div class="container"&gt;
+    &lt;div id="gallery" class="row"&gt;
+    &lt;div&gt;
+    &lt;div id="overlay"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<!-- end  -->
 
 4. Run gulp serve to load Gallery view
