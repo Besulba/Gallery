@@ -18,8 +18,8 @@ this file are the example of how you can start to use the plugin gallery
 
 Steps for use the gallery plugin
 
-1. add path css &lt;<link rel="stylesheet" href="source/gallery.css">&gt; to your html file
-2. add path js &lt;<script src="source/gallery.js"></script>&gt;
+1. add path css &lt;link rel="stylesheet" href="source/gallery.css"&gt; to your html file
+2. add path js &lt;script src="source/gallery.js"&gt;&lt;/script>&gt;
 3. add in your thml file the next lines code:
 
 <!-- begin -->
