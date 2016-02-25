@@ -21,7 +21,7 @@ function init(containerGallery, url){
     this.images = "";
     this.mode = {card:"card", overlay:"overlay"};
     this.pathImage = "assets/images/";
-    this.numberImagesLoad = {mobile:2,tablet:3,desktop:3};
+    this.numberImagesLoad = { mobile : 2 , tablet : 3 , desktop : 3 };
     this.totalImagesload = 0;
     this.prevNumberImageLoad = 0;
     this.scroll();
