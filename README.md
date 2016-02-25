@@ -18,11 +18,13 @@ Steps for use the gallery plugin
 2. add path js <script src="source/gallery.js"></script>
 3. add in your thml file the next lines code:
 
+<!--
 <div class="container">
     <div id="gallery" class="row">
     </div>
     <div id="overlay">
     </div>
 </div>
+-->
 
 4. Run gulp serve to load Gallery view
