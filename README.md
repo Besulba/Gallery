@@ -6,12 +6,16 @@ Getting Started
 
 In the path, where do you have the project, execute the next code:
 
-3. Run npm install --save <package> to install frontend dependencies
-3. Run bower install --save <package> to install frontend dependencies
+3. Run npm install
+3. Run bower install
 4. Run gulp serve to load Gallery view
+
+Other instrucction:
+
 5. Run gulp serve:test to run the tests in the browser
 6. Run gulp to build your webapp for production
 7. Run gulp serve:dist to preview the production buil
+
 8. Now do you need to use the plugin gallery
 9. the example the find in the index.html and index.js ,
 this file are the example of how you can start to use the plugin gallery
