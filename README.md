@@ -4,7 +4,7 @@ Getting Started
 1. Install NodeJs https://nodejs.org/en/download/
 2. Install dependencies: npm install --global gulp-cli bower
 
-In path when do you have the project execute the next code 
+In the path, where do you have the project, execute the next code:
 
 3. Run npm install --save <package> to install frontend dependencies
 3. Run bower install --save <package> to install frontend dependencies
