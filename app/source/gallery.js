@@ -113,12 +113,12 @@ function getNumberImagesLoad(){
 //param target posicion 
 //update card info 
 function addCard(card,posicion){
-    card.children[1].src = gallery.images[posicion].imageurl;
-    card.children[1].id = "image" + posicion;
-    card.children[4].innerHTML = gallery.images[posicion].name;
-    card.children[4].id = "title" + posicion;
-    card.children[5].innerHTML = "By : " + gallery.images[posicion].artist;
-    card.children[5].id = "text" + posicion;
+    card.children[0].src = gallery.images[posicion].imageurl;
+    card.children[0].id = "image" + posicion;
+    card.children[1].innerHTML = gallery.images[posicion].name;
+    card.children[1].id = "title" + posicion;
+    card.children[2].innerHTML = "By : " + gallery.images[posicion].artist;
+    card.children[2].id = "text" + posicion;
 }
 
 //paint overlay view
@@ -126,6 +126,7 @@ function addCard(card,posicion){
 //param state event if change card or show overlay card
 function paintOverlay(image,changeCard){
     var modal = document.getElementById("modal");
+    var moveCard = document.getElementById("moveCard");
     var posicion = parseInt(image.id);
     if(changeCard){
         modal.innerHTML = image.innerHTML;    
@@ -133,24 +134,23 @@ function paintOverlay(image,changeCard){
         addCard(modal,posicion);
     }
     
-    addCardOverlay(modal,posicion);
+    addCardOverlay(modal,posicion,moveCard);
 }
 
 //param target modal
 //param target posicion 
 //update card extra info 
-function addCardOverlay(modal,posicion){
-    modal.children[0].children[0].src = gallery.pathImage + "icon-close.png";
-    modal.children[0].hidden = false;
-    modal.children[1].dataset.toggle  = "";
-    modal.children[6].innerHTML = "By : " + gallery.images[posicion].about;
-    modal.children[6].id = "descripcion" + posicion;
-    modal.children[7].innerHTML = "Current value: " + gallery.images[posicion].price + " million";
-    modal.children[7].id = "price" + posicion;
-    modal.children[2].id = posicion;
-    modal.children[2].src = gallery.pathImage + "icon-prev.png";
-    modal.children[3].id = posicion;
-    modal.children[3].src = gallery.pathImage + "icon-next.png";
+function addCardOverlay(modal,posicion,moveCard){
+    modal.children[0].dataset.toggle  = "";
+    modal.children[3].innerHTML = gallery.images[posicion].about;
+    modal.children[3].id = "descripcion" + posicion;
+    modal.children[4].innerHTML = "Current value: " + gallery.images[posicion].price + " million";
+    modal.children[4].id = "price" + posicion;
+    
+    moveCard.children[0].id = posicion;
+    moveCard.children[0].src = gallery.pathImage + "icon-prev.png";
+    moveCard.children[1].id = posicion;
+    moveCard.children[1].src = gallery.pathImage + "icon-next.png";
 }
 
 //previews card overlay
