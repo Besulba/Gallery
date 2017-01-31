@@ -1,5 +1,6 @@
 # Gallery
-Getting Started
+
+### Getting Started
 
 1. Install NodeJs &lt;https://nodejs.org/en/download/&gt;
 2. Install dependencies: npm install --global gulp-cli bower
@@ -20,7 +21,7 @@ Other instrucction:
 9. the example the find in the index.html and index.js ,
 this file are the example of how you can start to use the plugin gallery
 
-Steps for use the gallery plugin
+### Steps for use the gallery plugin
 
 1. add path css &lt;link rel="stylesheet" href="source/gallery.css"&gt; to your html file
 2. add path js &lt;script src="source/gallery.js"&gt;&lt;/script>&gt;
