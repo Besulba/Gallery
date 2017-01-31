@@ -2,7 +2,7 @@
 
 ### Getting Started
 
-1. Install NodeJs &lt;https://nodejs.org/en/download/&gt;
+1. Install [NodeJs](https://nodejs.org/en/download/&gt)
 2. Install dependencies: npm install --global gulp-cli bower
 
 In the path, where do you have the project, execute the next code:
@@ -28,14 +28,14 @@ this file are the example of how you can start to use the plugin gallery
 3. add in your thml file the next lines code:
 
 <!-- begin -->
-<pre><code>
+
 &lt;div class="container"&gt;
     &lt;div id="gallery" class="row"&gt;
     &lt;div&gt;
     &lt;div id="overlay"&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</code></pre>
+```
 <!-- end  -->
 
 4. Run gulp serve to load Gallery view
