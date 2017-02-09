@@ -1,7 +1,7 @@
 # Gallery
-
-### Getting Started
 -------------------
+### Getting Started
+
 ```
 * Install [NodeJs](https://nodejs.org/en/download/&gt)
 * Install dependencies: npm install --global gulp-cli bower
